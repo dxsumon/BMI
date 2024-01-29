@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal BMI Calculator</title>
+
+    <!-- Daisy Ui And Tailwind CSS LInk -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font-Awesome Link -->
+    <script src="https://kit.fontawesome.com/400d38c908.js" crossorigin="anonymous"></script>
+
+    <!-- Font Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Customize Font -->
+    <style>
+        .font-roboto {
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-roboto">
+    <div class="bg-[url(./asset/purple.png)] w-full h-[100vh] bg-cover bg-center">
+        <div class="hero lg:min-h-screen w-full p-5 lg:p-0 ">
+            <div class="hero-content flex-col lg:flex-row-reverse border-2 rounded-xl">
+                <h1 class="text-3xl text-center font-bold lg:hidden flex">BMI Calculator</h1>
+                <img src="./asset/bmi.webp" class="w-1/2 rounded-lg shadow-2xl" />
+                <div>
+                    <!-- Log In From -->
+                    <div class="bmi-calculator w-full flex-1">
+                        <h1 class="text-3xl font-semibold hidden lg:flex justify-center items-center pb-5">BMI
+                            Calculator</h1>
+                        <div class="grid gap-4">
+                            <input type="text" placeholder=" Enter your Height :"
+                                class="height-input-field input input-bordered input-primary border-none w-full bg-[#f3f1ff] text-black" />
+                            <input type="text" placeholder="Enter your Weight :"
+                                class="weight-input-field input input-bordered input-primary border-none w-full bg-[#f3f1ff] text-black" />
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <button class="btn mt-4 calculate w-full">Calculate</button>
+                        </div>
+                        <div class="border-2 w-full h-[70px] bg-[#f3f1ff] rounded-lg p-3 mt-4">
+                            <h1 class="result text-black font-semibold">Result :</h1>
+                        <p class="result-statement text-black font-semibold"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./bmi.js"></script>
+</body>
+
+</html>
